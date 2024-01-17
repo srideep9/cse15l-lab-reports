@@ -10,7 +10,7 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            output = "";
+            output = "Search Engine Contains:";
             for(int i = 0; i < strings.size(); i++){
 
                 output = output + " " + strings.get(i);
