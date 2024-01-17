@@ -10,6 +10,7 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
+            output = "";
             for(int i = 0; i < strings.size(); i++){
 
                 output = output + " " + strings.get(i);
