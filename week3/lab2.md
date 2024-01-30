@@ -37,4 +37,10 @@ Date: 01/30/2024
 
 ## Images
 
-![alt_text](image.png)
+![alt_text](image1.png)
+
+The relevant methods called when this is run is first, the main() method is called. Then, a new Handler() object is created and the handleRequest() method is called. Once this method starts, it returns a String to display on the webpage.
+
+The relevant arguments for the main() method is that you need to add a port number when running the file. This input will be stored in the args array. When the method handleRequest() is called, the relevant argument passed in is the url. The url is what stores the query that we need to match with a certain format. The instance ArrayList, msgs, stores all the messages sent, and they are joined together and returned at the end of handleRequest().
+
+The ArrayList msgs changes when this code was run in this moment. That's because I had to store the message in some area so that it could be printed out after consecutive queries.
