@@ -4,7 +4,7 @@ Date: 01/10/2024
 
 ## cd Command Code Blocks
 
-**Code Block 1 (cd with no arguments):**
+**Code Block 1 (`cd` with no arguments):**
 
     [user@sahara ~/lecture1/messages]$ pwd
     /home/lecture1/messages
@@ -12,9 +12,9 @@ Date: 01/10/2024
     [user@sahara ~]$ pwd
     /home
 
-Working Directory: messages
+Working Directory: `/home/lecture1/messages`
 
-Explanation: In this case, the starting directory was messages. cd with no arguments allows you to move to the very first directory, which is home in this case.
+Explanation: In this case, the starting directory was `messages`. `cd` with no arguments allows you to move to the very first directory, which is `home` in this case.
 
 Error?: No
 
@@ -28,9 +28,9 @@ Error?: No
 /home/lecture1
 ```
 
-Working Directory: home
+Working Directory: `/home`
 
-Explanation: In this case, cd allows you to change the directory to lecture1.
+Explanation: In this case, `cd` allows you to change the directory to `lecture1`.
 
 Error?: No
 
@@ -42,9 +42,9 @@ Error?: No
     bash: cd: Hello.java: Not a directory
     [user@sahara ~/lecture1]$ 
 
-Working Directory: lecture1
+Working Directory: `/home/lecture1`
 
-Explanation: In this case, cd with a file argument gives you an error because you cannot cd (change directory) into a file.
+Explanation: In this case, `cd` with a file argument gives you an error because you cannot `cd` (change directory) into a file.
 
 Error?: Yes
 
@@ -60,9 +60,9 @@ hello.txt  lecture1
 [user@sahara ~]$ 
 ```
 
-Working Directory: home
+Working Directory: `/home`
 
-Explanation: ls with no arguments just lists the files and directories listed inside the present working directory.
+Explanation: `ls` with no arguments just lists the files and directories listed inside the present working directory.
 
 Error?: No
 
@@ -75,9 +75,9 @@ Error?: No
 Hello.class  Hello.java  messages  README
 ```
 
-Working Directory: home
+Working Directory: `/home`
 
-Explanation: ls with a directory as an argument gives you the files and directories inside the directory you pass in as the argument.
+Explanation: `ls` with a directory as an argument gives you the files and directories inside the directory you pass in as the argument.
 
 Error?: No
 
@@ -91,9 +91,9 @@ Error?: No
 Hello.java
 ```
 
-Working Directory: lecture1
+Working Directory: `/home/lecture1`
 
-Explanation: ls with a file as an argument just lists the file name again, because a file cannot containe other files or directories.
+Explanation: `ls` with a file as an argument just lists the file name again, because a file cannot containe other files or directories.
 
 Error?: No
 
@@ -110,9 +110,9 @@ hello.txt  lecture1
 
 
 ```
-Working Directory: home
+Working Directory: `/home`
 
-Explanation: cat with no arguments results in an error, but it is not one with an error output. Instead, it simply breaks the terminal.
+Explanation: `cat` with no arguments results in an error, but it is not one with an error output. Instead, it simply breaks the terminal.
 
 Error?: Yes
 
@@ -129,9 +129,9 @@ cat: messages: Is a directory
 [user@sahara ~/lecture1]$ 
 ```
 
-Working Directory: lecture1
+Working Directory: `/home/lecture1`
 
-Explanation: cat with a directory as an argument also results in an error, but this time the error gives an output.
+Explanation: `cat` with a directory as an argument also results in an error, but this time the error gives an output.
 
 Error?: Yes
 
@@ -151,9 +151,9 @@ public class Hello {
   }
 ```
 
-Working Directory: lecture1
+Working Directory: `/home/lecture1`
 
-Explanation: cat with a file as an argument just prints the file contents.
+Explanation: `cat` with a file as an argument just prints the file contents.
 
 Error?: No
 
