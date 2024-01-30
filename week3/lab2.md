@@ -37,4 +37,4 @@ Date: 01/30/2024
 
 ## Images
 
-[](image.png)
+![alt_text](image.png)
