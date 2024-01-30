@@ -36,7 +36,7 @@ Date: 01/30/2024
         }
     }
 
-## Images
+**Images**
 
 ![alt_text](image1.png)
 
