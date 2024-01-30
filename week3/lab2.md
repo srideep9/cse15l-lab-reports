@@ -14,7 +14,8 @@ Date: 01/30/2024
     	ArrayList<String> msgs = new ArrayList<String>();
         public String handleRequest(URI url) {
             if(url.getPath().equals("/add-message")){
-                String message = url.getQuery().substring(url.getQuery().indexOf("s=") + 2, url.getQuery().indexOf("&"));
+                String message = (url.getQuery().substring(url.getQuery().indexOf("s=") + 2, 
+                                url.getQuery().indexOf("&")));
                 String user = url.getQuery().substring(url.getQuery().indexOf("&user=") + 6);
                 String s = String.format("%s: %s\n", user, message);
                 msgs.add(s);
