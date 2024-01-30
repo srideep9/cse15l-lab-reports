@@ -63,6 +63,6 @@ Screenshot logging into ieng6 with no password insertion:
 
 ![alt_text](image3.png)
 
-## Part 2:
+## Part 3:
 
 I learned about ssh keys and how they can make logging into things much easier. The biggest thing I learned though was how servers, port numbers, and urls worked back in week 2 with NumberServer. My knowledge of writing a program for a url improved now with the implementation of ChatServer.
