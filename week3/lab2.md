@@ -57,6 +57,8 @@ The ArrayList, msgs, adds a new element, which is the second message. This time,
 
 The absolute path of the private key stored on my computer is: Users/srideepdornala/.ssh/id_rsa
 
-The absolute path of the public key stored on ieng6 is: 
+The absolute path of the public key stored on ieng6 is: /home/linux/ieng6/oce/90/sdornala/.ssh/authorized_keys
 
 Screenshot logging into ieng6 with no password insertion:
+
+![alt_text](image3.png)
