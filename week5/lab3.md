@@ -33,3 +33,27 @@ Symptom of Failure Inducing Input:
 Symptom of Passing Input:
 
 ![alt_text](PassedTest.png)
+
+**Before and After Bug was fixed**
+
+The initial bug was that the array was being reversed without a temporary array being created to preserve the old array. For example, if the array was `{1,2,3}`, then the `reverseInPlace` method would first access the last element and change the first element to that. But when it comes time to access the first element and change the last element to that, the first element was already changed, so it would not work. That is why I created a temporary array to preserve the initial array and then reverse the initial array based on the elements in the temporary array.
+
+Here is the method from before the bug was fixed:
+
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```
+
+Here is the method after the bug was fixed:
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length/2; i += 1) {
+    int temp = arr[i];
+    arr[i] = arr[arr.length - i - 1];
+    arr[arr.length - i - 1] = temp;
+  }
+}
