@@ -24,4 +24,12 @@ public void testReverseInPlace() {
   assertArrayEquals(new int[]{0}, input1);
 }
 ```
+**Symptoms**
 
+Symptom of Failure Inducing Input:
+
+![alt_text](FailedTest.png)
+
+Symptom of Passing Input:
+
+![alt_text](PassingInput.png)
