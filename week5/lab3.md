@@ -32,4 +32,4 @@ Symptom of Failure Inducing Input:
 
 Symptom of Passing Input:
 
-![alt_text](PassingInput.png)
+![alt_text](PassedTest.png)
