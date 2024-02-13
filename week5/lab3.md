@@ -59,3 +59,16 @@ static void reverseInPlace(int[] arr) {
     arr[arr.length - i - 1] = temp;
   }
 }
+```
+## Part 2:
+
+### Grep Method Options:
+
+**Option 1: ignore-case**
+
+**Option 2: invert-match**
+
+**Option 3: count**
+
+**Option 4: max-count**
+
