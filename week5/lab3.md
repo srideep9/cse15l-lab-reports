@@ -66,9 +66,33 @@ static void reverseInPlace(int[] arr) {
 
 **Option 1: ignore-case**
 
+Example 1:
+![alt_text](ignorecase1.png)
+
+Example 2:
+![alt_text](ignorecase2.png)
+
 **Option 2: invert-match**
+
+Example 1:
+![alt_text](invertmatch1.png)
+
+Example 2:
+![alt_text](invertmatch2.png)
 
 **Option 3: count**
 
+Example 1:
+![alt_text](count1.png)
+
+Example 2:
+![alt_text](count2.png)
+
 **Option 4: max-count**
+
+Example 1:
+![alt_text](maxcount1.png)
+
+Example 2:
+![alt_text](maxcount2.png)
 
