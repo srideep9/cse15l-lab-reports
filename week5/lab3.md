@@ -83,6 +83,9 @@ this is to have succeeded [as a whistleblower].”
 Picture:
 ![alt_text](ignorecase1.png)
 
+Explanation:
+This option allows you to select the lines where a certain word appears regardless of case. Normally if you look for the 'whistleblower' word with just the default grep command, you will miss out on the words with capital letters. This command is useful because if you want to ignore case in your grep searches, you don't have to use two separate searches to find the lowercase and uppercase versions.
+
 Example 2:
 
 Present Working Directory: `/Users/srideepdornala/docsearch/technical`
@@ -120,6 +123,9 @@ Output:
 Picture:
 ![alt_text](ignorecase2.png)
 
+Explanation:
+This example is similar to the previous, except instead of finding words in a singular file, I added the `-r` command which recursively searches through all the files in a directory. In this case, I used the same `--ignore-case` option to find all of the lines with the word 'hepatic'. This is useful once again because you don't need to do two separate searches. I also used the short form for `--ignore-case` here by using `-i`. Also, I only posted the beginning of the output since it was so long.
+
 **Option 2: invert-match**
 
 Example 1:
@@ -145,6 +151,9 @@ this is to have succeeded [as a whistleblower].”
 ```
 Picture:
 ![alt_text](invertmatch1.png)
+
+Explanation:
+This option allows you to get the output of all the lines that do not contain a certain word. If there is a certain key word you want to exclude, you can do that using `--invert-match`. In this case, I returned all the lines in the file that do not contain the word 'the'.
 
 Example 2:
 
@@ -174,6 +183,9 @@ Output:
 Picture:
 ![alt_text](invertmatch2.png)
 
+Explanation:
+This example is similar to the previous except I recursively search through a directory instead of a singular file using `-r`. I used the short form for `--invert-match` which is `-v`. In this example I searched for the lines without the letter 'a' and only included the beginning of the output.
+
 **Option 3: count**
 
 Example 1:
@@ -189,6 +201,8 @@ Output:
 
 Picture:
 ![alt_text](count1.png)
+
+Explanation:
 
 Example 2:
 
