@@ -203,6 +203,7 @@ Picture:
 ![alt_text](count1.png)
 
 Explanation:
+This option allow you to find the count that certain words appear in whatever space you choose to search. This is useful if you want a more concise output and if you just need the number of times a word appears. If you use the usual grep command, you usually won't be able to manually count each line. That's where the count option becomes really useful. In this case, I found how many times the word 'hepatic' appears in a file.
 
 Example 2:
 
@@ -248,6 +249,9 @@ Output:
 Picture:
 ![alt_text](count2.png)
 
+Explanation: 
+In this example, I used the same command but recursively searched through the current directory. The output provided the number of times the word 'hepatic' appeared in each file in the present directory. I used the short form for `--count` which is `-c`. The output is shortened because there were so many lines.
+
 **Option 4: max-count**
 
 Example 1:
@@ -264,6 +268,9 @@ of hepatic disease varies from the unspecific (e.g.
 
 Picture:
 ![alt_text](maxcount1.png)
+
+Explanation:
+This command combines the function of the count option and the default grep command function. It outputs the number of lines that you want from a file that contains a specific word. If you see in the above picture, the number of lines with the word hepatic is actually 4, but by using `--max-count`, I limit it to the first two.
 
 Example 2:
 
@@ -293,4 +300,9 @@ Output:
 
 Picture:
 ![alt_text](maxcount2.png)
+
+Explanation:
+For this example, I recursively searched through each file and found the first line with a certain word. This is useful because if you want to only print the first line where a word occurs from each file, you could do that (or 2 or however many lines). The default grep command prints all the lines and if you search for a common word, there could be several lines from each file. I used the `-m` short form for `--max-count` in this example. I also shortened the output because it was too long.
+
+Source I used to find commands (including how to use them and their short forms): https://man7.org/linux/man-pages/man1/grep.1.html
 
